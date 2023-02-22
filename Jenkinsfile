@@ -10,8 +10,6 @@ pipeline {
         git 'https://github.com/Shaxxz13/image-processing.git'
          }
        }
-        
-
 
         stage('Install Dependencies') {
             steps {
