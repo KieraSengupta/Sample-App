@@ -4,7 +4,7 @@ pipeline {
     tools {nodejs "node"}
     
     stages {
-        
+
         stage('Git') {
       steps {
         git 'https://github.com/Shaxxz13/image-processing.git'
@@ -27,7 +27,7 @@ pipeline {
         
         stage('Build') {
             steps {
-                sh 'npm run build'
+                sh 'npm run deploy'
             }
         }
     }
