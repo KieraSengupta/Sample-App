@@ -15,6 +15,15 @@ pipeline {
             }
         }
         
+          tools {nodejs "nodejs"}
+
+          stages {
+            stage('Install NodeJs') {
+              steps {
+                sh 'npm config ls'
+              }
+            }
+          }
         stage('Install Dependencies') {
             steps {
                 sh 'npm install'
